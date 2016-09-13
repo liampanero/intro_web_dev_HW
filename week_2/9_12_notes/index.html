@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- charset attribute specifies the character encoding four our webpage -->
+    <meta charset="utf-8">
+
+    <!-- required and will show up as the link for a search engine -->
+    <title>Hello World!</title>
+
+    <!-- Optional eta tags they help with SEO -->
+    <meta name="description" content="this is a cample description">
+
+    <!-- commas seporate words -->
+    <meta name="keywords" content="HTML, CSS, Tutorial">
+    <meta name="author" content="your name/company">
+
+    <!-- JS or CSS files load in the head of the doc -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <!-- defines style for entire page, good for single page site, inefficient for multiple pages-->
+    <!--
+	<style type="text/css">
+		body{
+			color:purple;
+		}
+	</style>
+	<script type="text/javascript">
+		var x _ 0;
+	</script> 
+	-->
+
+</head>
+
+<body>
+    <p>This is a page with some basic <em>HTML elements</em>. We will update and add to this example.</p>
+	
+	<!-- hr tag creates horizontal divider -->
+	<!-- id is specifc label on a tag -->
+	<hr/ id="top">
+
+    <!-- Header tages: hi is the most important, h6 is the least, h1 reander the biggest. all header tage assign more heirarchical value -->
+    <h1>This is a H1 header</h1>
+    <h2>This is a H2</h2>
+    <h3>This is a H3</h3>
+    <h4>This is a H4</h4>
+    <h5>This is a H5</h5>
+    <h6>This is a H6</h6>
+
+    <p> This paragraph has a bold tag. <strong> This sentence is bold because it's wrapped in a strong tag. </strong><em>This sentence is italicized because it is wrapped in an em tage</em></p>
+    <p>This is a third paragraph, this
+        <br/>time
+        <br/>with
+        <br/>line
+        <br/>breaks</p>
+
+    <p>This paragraph has a small tag nested within it <small>making this text is smaller</small></p>
+
+    <!-- Unordered List -->
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+
+    <!-- Ordered List -->
+    <ol>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ol>
+
+    <!-- Imgae Notes -->
+    <p>This is a sample image tag. If someone has a screen readerthey will still understand the sontent of your pafe. </p>
+	
+	<!-- alt is what will show up with screen read or load error -->
+	<!-- title is what shows up when mouse hovers over image (should be short and discriptive) -->
+    <img src="images/goat_1.jpg" alt="Goat making derp face" title="Derp Goat"/>
+	
+	<!-- width tag locks in pixel width -->
+	<!-- Image files should be the size which they appear on page -->
+    <img src="images/goat_2.jpg" alt="Mr.Steal your girl" title="Handsome-Ass Goat" width="300"/>
+
+    <!-- Anchor Tags -->
+    <!-- target = "_blank" open new tab for hyper link rather than using the current one -->
+    <p> Learn more about
+    <a href="https://en.wikipedia.org/wiki/Kermit_the_Frog" target="_blank">Kermit the Frog</a>
+    here. </p>
+
+    <p>This is a link to email someone. For example: <br/> 
+    <a href="mailto:info@yourwebsite.com">Contact Us</a></p>
+	
+	<!-- "#" signifies an ID -->
+    <p>This is a link to the top of the page using an ID as the href!
+    <a href="#top"></a></p>
+</body>
+</html>
