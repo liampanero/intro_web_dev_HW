@@ -1,0 +1,5 @@
+##Wire Framing Reaction
+
+Having already taken IDM's UX Design Course there wasn't anything in the article that was new to. I agree with most everything that was stated, also believing in live a collabrative design process informed by both right and left brain paths of thought. I will say that in early stages of design I preffer closing my computer ad working with physical materials such as sticky notes and hand drawn, low-fi wire frames. I find that at such an early stage of cenceptial development working in a digital eviroment souronded by so many small preferences and design choices I've set up for myself only increases my subconcious bias toward disigning for myself rather than my users.
+
+Liam Panero | 09/18/2016 | Intro to Web Dev
