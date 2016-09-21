@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Layout2: 3 equal colums 2 ways</title>
+	<style type="text/css">
+
+		div, header, footer, article, section, aside, main{
+			min-height: 100px;
+			background-color: rgba(0,0,255,0.2);
+		}
+
+		main{
+			width: 960px;
+			margin: 0px auto;
+		}
+
+		.col-pixels{
+			width: 300px;
+			margin: 0px 10px;
+			float:left;
+		}
+
+		/* adds a block empty element with zero hieght that clears both sides to avoid our wrappering/float issue */
+		.clear_fix:after{
+			display: block;
+			clear:both;
+			/*ensures some old compatability */
+			height: 0px;
+			font-size: 0px;
+			content: " ";
+			/*extra backup */
+			visibility: hidden;
+		}
+		
+		article.col_fluid section{
+			/* 100% browser width - 8 * 2.5% / 4 = 20% */
+			width: 20%;
+			margin: 2.5%;
+			float: left;
+		}
+
+
+	</style>
+</head>
+<body>
+	<!-- full width header & footer because they are not placed within a wrapper or parent container-->
+	<header>
+		Header
+	</header>
+
+	<main class="clear_fix">
+		<h1>3 collum fixed width with wrapper</h1>
+		<article class="col-pixel"></article>
+		<article class="col-pixel"></article>
+		<article class="col-pixel"></article>
+	</main>
+
+	<!-- Fluid Layout using percentages-->
+
+	<h2>Fluid layout</h2>
+	<article class=" col_fluid clear_fix">
+
+		<section>
+			<h3>Fluid Section 1</h3>
+		</section>
+
+		<section>
+		<h3>Fluid Section 2</h3>
+		</section>
+
+		<section>
+		<h3>Fluid Section 3</h3>
+		</section>
+
+	</article>
+	<footer>
+		Footer
+	</footer>
+</body>
+</html>

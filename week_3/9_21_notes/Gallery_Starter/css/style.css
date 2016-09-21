@@ -1,0 +1,58 @@
+@import 'https://fonts.googleapis.com/css?family=Quicksand';
+
+html{
+
+	/*background: url w/ link to image | reapet | center h | center v | fix it in place */
+	background: url(../img/bg.jpg) no-repeat center center fixed;
+
+	/* CSS3 feature */
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	/* INTERNET EXPLORER!!! FU*/
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/bg.jpg', sizingMethod='scale');
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/bg.jpg', sizingMethod='scale')";
+}
+
+body{
+	font-family: 'Quicksand', sans-serif;
+
+}
+
+div.container{
+	width:900px;
+	margin: 0 auto;
+}
+
+div.polaroid{
+	position: relative;
+	width: 240px;
+	display: inline-block;
+	margin: 20px;
+}
+
+.polaroid img{
+	width:100%;
+	height: auto;
+	border: 10px solid #fef9ef;
+	border-bottom: 45px solid #fef9ef;
+	/* box shadow  h-shadow | v-shadow | blur |spread | color */
+	box-shadow: 3px 3px 5px 5px rgba(255, 255, 255, 0.2);
+	-webkit-box-shadow: 3px 3px 5px 5px rgba(255, 255, 255, 0.2);
+	-moz-box-shadow: 3px 3px 5px 5px rgba(255, 255, 255, 0.2);
+	-o-box-shadow: 2px 2px 5px 5px rgba(255, 255, 255, 0.2);
+}
+
+/* absolute positioning of a element is based on the browser dimensions */
+/* relative is positioning relative to where it would have rendered by default if you want to position an element relative to it's container, the element is postiioned absolutle, and it's parent/container gets positioned relative */
+
+.polaroid p{
+	color:black;
+	text-align: center;
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+
+
+}

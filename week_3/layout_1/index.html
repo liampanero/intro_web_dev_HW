@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Layout 1: header, footer, main, sidebar using pixels</title>
+	<link rel="stylesheet" type="text/css" href="css/layout.css">
+</head>
+<body>
+
+	<div class="wrapper">
+		<header>A header element with 100% width</header>
+		<main>
+			<h1>This is an article with a sidebar</h1>
+			<article>
+
+				<h3>An Article with 3 sections</h3>
+
+				<section><h4>Sec 1</h4></section>
+				<section><h4>Sec 2</h4></section>
+				<section><h4>Sec 3</h4></section>
+				<section><h4>Sec 4</h4></section>
+
+			</article>
+
+			<aside>
+				<h3>Some sidebar stuff</h3>
+			</aside>
+
+			<!-- we use a class clear with clear:both after the floated elements, and before it's parent container -->
+			<br class="clear"/>
+		</main>
+		<footer>some footer content</footer>
+	</div>
+
+
+
+</body>
+</html>

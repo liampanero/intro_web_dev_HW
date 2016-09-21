@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Inline Block vs Block Float demo/compare</title>
+	<style type="text/css">
+		/* universal selector for all tags on page */
+		*{
+			margin: 0px;
+			padding: 0px;
+		}
+
+		main, article{
+			background-color: rgba(0,0,255,0.2);
+		}
+
+		main{
+			width:900px;
+			margin: 0 auto;
+		}
+
+		article{
+
+			width: 300px;
+			height: 300px;
+			float: left;
+			
+			/* add a border */
+			border: 2px solid blue;
+			
+			/* modifty width and hieght (to stay square) */
+			width:296px;
+			height: 296px;
+			
+			/*ad margin*/
+			margin: 10px;
+
+			/* account for margin  */
+			width:276px;
+			height: 276px;
+			display: inline-block;
+
+			/* 
+				we can fix the slight additional margin with:
+
+				a negative margin of -4px
+				OR
+				adjust knowing we need to account for this subtract 4 px from our horizontal margins
+			*/
+
+			/* margin: 10px 8px; */
+			width:274px;
+			height: 274px;
+		}
+
+		.clear_fix:after{
+			display: block;
+			clear:both;
+			/*ensures some old compatability */
+			height: 0px;
+			font-size: 0px;
+			content: " ";
+			/*extra backup */
+			visibility: hidden;
+
+		}
+
+	</style>
+</head>
+<body>
+	
+	<main class="clear_fix">
+
+		<article>1</article>
+		<article>2</article>
+		<article>3</article>
+
+	</main>
+
+</body>
+</html>
