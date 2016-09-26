@@ -1,0 +1,110 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto:400,900';
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+nav{
+	margin: 0 auto;
+}
+div.container { 
+    width: 900px;
+    margin: 0 auto;
+}
+
+.clear_fix:after {
+    display: block;
+    clear: both;
+    height: 0px;
+    font-size: 0px;
+    content: " ";
+    /*extra backup */
+    visibility: hidden;
+}
+
+ul {
+    /* remove the default bullet point */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #AAA;
+    overflow: hidden;
+    width: 100%;
+}
+
+ul li {
+    float: left;
+    width: 200px;
+}
+
+li a {
+    display: block;
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+li a:hover {
+    background-color: #111;
+    color: white;
+}
+
+a#logo{
+	font-weight: 900;
+	padding-right: 100px;
+}
+
+
+a#logo:hover {
+	background-color: #AAA;
+	color: #333;
+
+}
+
+div.container{
+	width:100%;
+	margin: 0 auto;
+}
+
+h2{
+	padding: 10px; 
+}
+
+div.featured{
+	/* class = featured is given a margin of 10px putting out of alignment with nav even though i assigned it a 0 auto margin? */
+	margin: 0 auto;
+	position: relative;
+	width: 100%;
+	display: inline-block;
+	margin: 20px;
+	background-color: rgba(0,0,255,0.2);
+}
+
+div.featured img{
+	max-height: 450px;
+	width: 100%;
+}
+
+figcaption{
+	float:right;
+	padding: 5px 10px;
+}
+
+div.thumbnail{
+	margin:0 auto;
+	position: relative;
+	width: 300px;
+	display: inline-block;
+	margin: 30px;
+	background-color: rgba(0,255,0,0.2);
+}
+
+.thumbnail img{
+	width:100%;
+	height: auto;
+}
+
+footer{
+	background-color: #AAA;
+}
+
