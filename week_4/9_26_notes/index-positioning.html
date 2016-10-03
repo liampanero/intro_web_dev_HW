@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Positioning Elements</title>
+	<style type="text/css">
+		.top_right_rel{
+			width: 300px;
+			height: 300px;
+			border: 2px solid #0f0;
+			position: relative;
+			top:100px;
+			right:0px;
+		}
+
+		.top_right_abs{
+			width: 300px;
+			height: 300px;
+			border: 2px solid #f00;
+			position: absolute;
+			top:100px;
+			right:0px;
+		}
+
+		footer{
+			width:100%;
+			height: 50px;
+			background-color: rgba(0,0,255,0.3);
+			position: fixed;
+			bottom: 0px;
+		}
+
+		.inner-rel{
+			position: relative;
+			width: 100px;
+			height: 100px;
+			border: 2px solid orange;
+			top: 100px;
+		}
+
+		.inner-abs{
+			position: absolute;
+			width: 100px;
+			height: 100px;
+			border: 2px solid blue;
+			top: 100px;
+		}
+	</style>
+</head>
+<body>
+	<div> This is just a plain, unstyled div</div>
+
+	<div class="top_right_rel">
+		This is a relatively positioned div
+		<div class="inner-abs"> Abs in Rel-Div</div>
+	</div>
+
+	<div class="top_right_abs">
+		This is a absolutely positioned div
+		<div class="inner-rel"> Rel in Abs-Div</div>
+	</div>
+	<footer>This is a footer with a fixed postion</footer>
+</body>
+</html>
